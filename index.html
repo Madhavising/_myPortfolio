@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Madhavi Singh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Madhavi Singh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.jpg" alt="Profile" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I am</p>
+          <h1 class="title">Madhavi Singh</h1>
+          <p class="section__text__p2">Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.alert('Comming Soon')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact info
+            </button>
+          </div>
+          <div id="social-container">
+            <img
+              src="./assets/github.png"
+              alt="MY GitHUb profile"
+              class="icon"
+              onclick="window.open('https://github.com/Madhavising', '_blank')"
+            />
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Go_down"
+          class="icon arrow1"
+          onclick="location.href='./#about'"
+        />
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education" class="icon" />
+              <h3>Education</h3>
+              <br />
+              <table class="table">
+                <tr>
+                  <th>Institute</th>
+                  <th>Course</th>
+                  <th>Percentage</th>
+                  <th>Year</th>
+                </tr>
+                <tr>
+                  <td>Krishna Engineering College</td>
+                  <td>BTech</td>
+                  <td>81.04%</td>
+                  <td>2020-24</td>
+                </tr>
+
+                <tr>
+                  <td>Saraswati H S School</td>
+                  <td>Senior Secondary</td>
+                  <td>86.4%</td>
+                  <td>2020</td>
+                </tr>
+                <tr>
+                  <td>Saraswati H S School</td>
+                  <td>Higher Secondary</td>
+                  <td>95.6%</td>
+                  <td>2018</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Trying to be an accomplished developer who thrives on transforming
+              innovative ideas into reality. With a keen eye for detail and a
+              passion for problem-solving.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Go_down"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My Skills</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TailwindCSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ExpressJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+            <br /><br />
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NodeJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                  <p>Testing</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Internship</h2>
+            <div class="article-container-research">
+              <article class="article-research">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java Development Intern</h3>
+                  <p>
+                    Worked on actual project 'Time Conversion by Country',
+                    showcasing skills in Java development.<br />
+                    Demonstrated proficiency in date-time manipulation and user
+                    input handling, contributing to the project's accurate and
+                    user-friendly functionality.<br /><br />
+                    Visit Company :<a
+                      href="https://internship.codeclause.com"
+                      target="_blank"
+                    >
+                      CodeClause, IT Services and IT Consulting </a
+                    ><br />
+                    Link :<a href="./assets/codeClauseCert.png" target="_blank">
+                      Certificate
+                    </a>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-container">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="card">
+                <img
+                  src="./assets/project-6.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+
+                <br/>
+                <div class="card-text">
+                  <p>
+                    LogixK9 is an AI-powered security surveillance system that
+                    detects and alerts suspicious activities in real time. It
+                    integrates machine learning models for accurate threat
+                    detection and provides instant alerts through a web
+                    interface.<br />
+
+                    #WebsiteTemplate #ReactJS #ExpressJS #NodeJS #MongoDB #JWT
+                    #AI #Security
+                  </p>
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">LogixK9</h2>
+            </div>
+            <div class="btn-container">
+              <a href="https://github.com/Madhavising/LogixK9">
+                <button class="btn btn-color-2 project-btn">Github</button>
+              </a>
+
+              <a href="https://logix-k9.vercel.app">
+                <button class="btn btn-color-2 project-btn">Live Demo</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="card">
+                <img
+                  src="./assets/project-5.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+                <br/> <br/>
+                <div class="card-text">
+                  <p>
+                    ABC InfoTech is a modern business solutions website designed
+                    to enhance operational efficiency. It provides IT services,
+                    cloud solutions, and AI-driven analytics to help businesses
+                    scale effectively.<br />
+
+                    #ReactJs #TailwindCSS #ExpressJS #NodeJS #MongoDB #JWT
+                    #BusinessSolutions #Cloud #ITServices
+                  </p>
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">ABC InfoTech</h2>
+            </div>
+            <div class="btn-container">
+              <a href="https://github.com/Madhavising/ABC-InfoTech">
+                <button class="btn btn-color-2 project-btn">Github</button>
+              </a>
+
+              <a href="https://abc-info-tech.vercel.app">
+                <button class="btn btn-color-2 project-btn">Live Demo</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="card">
+                <img
+                  src="./assets/project-4.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </br>
+
+                <div class="card-text">
+                  <p>
+                    The **Hospital Management Website** is a comprehensive web
+                    application that streamlines hospital operations. It
+                    features role-based access for **admin, doctors, and
+                    patients**, allowing seamless **appointment booking, patient
+                    record management, and real-time status updates**. Built
+                    with the **MERN stack**, it ensures secure authentication
+                    and an intuitive user interface.<br />
+
+                    #HospitalManagement #MERNStack #HealthcareTech #ReactJS
+                    #TailwindCSS #ExpressJS #NodeJS #MongoDB #JWT
+                  </p>
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">
+                Hospital Management System
+              </h2>
+            </div>
+            <div class="btn-container">
+              <a
+                href="https://github.com/Madhavising/Hospital_Management_System"
+              >
+                <button class="btn btn-color-2 project-btn">Github</button>
+              </a>
+
+              <a href="https://zeecare-cwm.netlify.app">
+                <button class="btn btn-color-2 project-btn">Live Demo</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-container">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="card">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+                <div class="card-text">
+                  <p>
+                    Coza Store is an e-commerce web app offering a seamless
+                    shopping experience.<br />
+                    Users can browse products, add items to their cart, and
+                    securely checkout with an intuitive interface.<br />
+
+                    #ShoppingApp #ECommerce #fullStack #UserFriendly
+                  </p>
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">Coza Store</h2>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.alert('Comming Soon')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.alert('Comming Soon')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="card">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+
+                <div class="card-text">
+                  <p>
+                    TodoZi is a task management web app.It allows users to
+                    create, edit, and delete tasks.<br />
+                    The app features secure authentication with JWT and Bcrypt,
+                    ensuring user data protection.<br />
+
+                    #TaskManagement #ExpressJS #NodeJS #MongoDB #JWT
+                    #Productivity
+                  </p>
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">TodoZi App</h2>
+            </div>
+            <div class="btn-container">
+              <a href="https://github.com/Madhavising/To-Do-App">
+                <button class="btn btn-color-2 project-btn">Github</button>
+              </a>
+
+              <a href="https://todozi-app.netlify.app">
+                <button class="btn btn-color-2 project-btn">Live Demo</button>
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="card">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+                <div class="card-text">
+                  <p>
+                    The Weather App provides real-time weather updates and
+                    forecasts using HTML, CSS, JavaScript, and a Weather API.<br />
+                    Easily search for any city’s weather or check your location
+                    with an intuitive interface. #RealTimeUpdates #UserFriendly
+                    #WeatherAPI #JavaScript
+                  </p>
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">Weather App</h2>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Madhavising/WeatherApp'"
+              >
+                Github
+              </button>
+
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://weatherappbymadhavisingh.netlify.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com">01singh.madhavi@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="https://github.com/Madhavising"
+              >https://github.com/Madhavising</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="contact-info-lower-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/madhavi-singh-31403921b"
+              >https://www.linkedin.com/in/madhavi-singh-31403921b</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Madhavi Singh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
