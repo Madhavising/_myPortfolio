@@ -311,6 +311,7 @@ section {
   justify-content: space-around;
   overflow: hidden;
 }
+
 .article-container-research {
   display: flex;
   text-align: initial;
