@@ -278,6 +278,19 @@ section {
   gap: 4rem;
   height: 80%;
 }
+
+.section-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  min-width: 300px;
+}
 .section__pic-container {
   height: 400px;
   width: 400px;
@@ -316,7 +329,7 @@ section {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2.5rem;
   justify-content: space-around;
   overflow: hidden;
@@ -334,8 +347,12 @@ article {
   gap: 0.5rem;
 }
 
+
+
 article .icon {
   cursor: default;
+   width: 24px;
+  margin-bottom: 0.5rem;
 }
 
 /* PROJECTS SECTION */
